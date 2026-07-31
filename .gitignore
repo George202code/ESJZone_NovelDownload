@@ -3,19 +3,29 @@ __pycache__/
 *.pyc
 *.pyo
 
+# ===== IDE / 编辑器 =====
+.idea/
+.vscode/
+
+# ===== 工具内部数据 =====
+.codebuddy/
+
 # ===== 运行日志 / 调试残留 =====
 _*.log
 _*.err
 _*.txt
+_*.md
 *.log
+_*.py
+failed_images.txt
+logs/
 
 # ===== 敏感 / 登录态（含 cookie，切勿提交） =====
 storage_state.json
-state/storage_state.json
 
 # ===== 产物 =====
-novels/*.epub
+novels/
 cache.db
 
-# ===== 可选：状态文件（断点续传依据，按需保留） =====
-# state/*.json
+# ===== 状态文件（断点续传依据，按需保留） =====
+state/*.json
