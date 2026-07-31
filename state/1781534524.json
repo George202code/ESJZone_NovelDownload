@@ -1,0 +1,856 @@
+{
+  "novel_id": "1781534524",
+  "title": "我成了兽人王国唯一的人类",
+  "author": "별꽃라떼",
+  "alt_title": "",
+  "raw_url": "https://novelpia.com/novel/397135",
+  "tags": [
+    "R15",
+    "奇幻",
+    "后宫",
+    "学院",
+    "兽人",
+    "龙傲天"
+  ],
+  "total": 119,
+  "completed": 119,
+  "cover_path": "",
+  "start_time": "2026-08-01T02:49:35.898903",
+  "end_time": "2026-08-01T02:50:45.284698",
+  "output_file": "./novels\\我成了兽人王国唯一的人类.epub",
+  "chapters": {
+    "https://www.esjzone.one/forum/1781534524/533478.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533478.html",
+      "title": "[插图] 奥尔卡",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533480.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533480.html",
+      "title": "[插图] 芭丝特",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533342.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533342.html",
+      "title": "序章",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533347.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533347.html",
+      "title": "1. 人类失格（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533349.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533349.html",
+      "title": "2. 人类失格（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533350.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533350.html",
+      "title": "3. 人类失格（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533352.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533352.html",
+      "title": "4. 人类失格（4）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533353.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533353.html",
+      "title": "5. 披着羊皮的雄性（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533354.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533354.html",
+      "title": "6. 披着羊皮的雄性（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533357.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533357.html",
+      "title": "7. 披着羊皮的雄性（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533360.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533360.html",
+      "title": "8. 兽人学院（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533361.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533361.html",
+      "title": "9. 兽人学院（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533362.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533362.html",
+      "title": "10. 兽人学院（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533363.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533363.html",
+      "title": "11. 分班（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533364.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533364.html",
+      "title": "12. 分班（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533366.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533366.html",
+      "title": "13. 分班（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533367.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533367.html",
+      "title": "14. 十三班（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533369.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533369.html",
+      "title": "15. 十三班（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533379.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533379.html",
+      "title": "16. 十三班（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533391.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533391.html",
+      "title": "17. 十三班（4）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533394.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533394.html",
+      "title": "18. 十三班（5）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533414.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533414.html",
+      "title": "19. 十三班（6）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533415.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533415.html",
+      "title": "20. 配对（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533417.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533417.html",
+      "title": "21. 配对（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533422.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533422.html",
+      "title": "22. 配对（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533423.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533423.html",
+      "title": "23. 两个兽人虽然都是问题儿童（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533424.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533424.html",
+      "title": "24. 两个兽人虽然都是问题儿童（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533426.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533426.html",
+      "title": "25. 两个兽人虽然都是问题儿童（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533428.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533428.html",
+      "title": "26. 两个兽人虽然都是问题儿童（4）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533429.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533429.html",
+      "title": "27. 野外求生（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533430.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533430.html",
+      "title": "28. 野外求生（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533431.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533431.html",
+      "title": "29. 野外求生（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533432.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533432.html",
+      "title": "30. 野外求生（4）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533436.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533436.html",
+      "title": "31. 我是魔法师（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533437.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533437.html",
+      "title": "32. 我是魔法师（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533439.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533439.html",
+      "title": "33. 我是魔法师（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533440.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533440.html",
+      "title": "34. 我是魔法师（4）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533443.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533443.html",
+      "title": "35. 人类的可能性（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533444.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533444.html",
+      "title": "36. 人类的可能性（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533446.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533446.html",
+      "title": "37. 人类的可能性（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533448.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533448.html",
+      "title": "38. 人类的可能性（4）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533450.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533450.html",
+      "title": "39. 小心帝国犬（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533452.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533452.html",
+      "title": "40. 小心帝国犬（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533453.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533453.html",
+      "title": "41. 小心帝国犬（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533457.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533457.html",
+      "title": "42. 孤立者无处不在（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533484.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533484.html",
+      "title": "43. 孤立者无处不在（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533487.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533487.html",
+      "title": "44. 孤立者无处不在（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533490.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533490.html",
+      "title": "45. 孤立者无处不在（4）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533494.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533494.html",
+      "title": "46. 帝国的阴影（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533496.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533496.html",
+      "title": "47. 帝国的阴影（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533497.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533497.html",
+      "title": "48. 远海的金太阳（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533500.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533500.html",
+      "title": "49. 远海的金太阳（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533502.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533502.html",
+      "title": "50. 远海的金太阳（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533503.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533503.html",
+      "title": "51. 远海的金太阳（4）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533504.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533504.html",
+      "title": "52. 远海的金太阳（5）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533505.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533505.html",
+      "title": "53. 远海的金太阳（6）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533509.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533509.html",
+      "title": "54. 远海的金太阳（7）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533511.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533511.html",
+      "title": "55. 远海的金太阳（8）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533512.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533512.html",
+      "title": "56. 远海的金太阳（9）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533514.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533514.html",
+      "title": "57. 远海的金太阳（10）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533516.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533516.html",
+      "title": "58. 远海的金太阳（11）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533517.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533517.html",
+      "title": "59. 远海的金太阳（12）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533521.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533521.html",
+      "title": "60. 远海的金太阳（13）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533565.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533565.html",
+      "title": "61. 前往兔子洞（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533568.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533568.html",
+      "title": "62. 前往兔子洞（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533569.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533569.html",
+      "title": "63. 前往兔子洞（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533570.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533570.html",
+      "title": "64. 前往兔子洞（4）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533571.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533571.html",
+      "title": "65. 飞翔的金太阳（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533572.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533572.html",
+      "title": "66. 飞翔的金太阳（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533573.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533573.html",
+      "title": "67. 飞翔的金太阳（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533574.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533574.html",
+      "title": "68. 飞翔的金太阳（4）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533575.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533575.html",
+      "title": "69. 飞翔的金太阳（5）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533577.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533577.html",
+      "title": "70. 飞翔的金太阳（6）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533578.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533578.html",
+      "title": "71. 飞翔的金太阳（7）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533587.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533587.html",
+      "title": "72. 王的资质（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533589.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533589.html",
+      "title": "73. 王的资质（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533641.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533641.html",
+      "title": "74. 王的资质（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533642.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533642.html",
+      "title": "75. 卧室里的皇帝（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533643.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533643.html",
+      "title": "76. 卧室里的皇帝（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533717.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533717.html",
+      "title": "77. 兔子的肝（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533719.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533719.html",
+      "title": "78. 兔子的肝（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533720.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533720.html",
+      "title": "79. 兔子的肝（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533745.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533745.html",
+      "title": "80. 重逢（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533746.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533746.html",
+      "title": "81. 重逢（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533748.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533748.html",
+      "title": "82. 重逢（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533750.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533750.html",
+      "title": "83. 重逢（4）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533788.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533788.html",
+      "title": "84. 鸟儿没有乐园（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533790.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533790.html",
+      "title": "85. 鸟儿没有乐园（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533791.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533791.html",
+      "title": "86. 鸟儿没有乐园（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533812.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533812.html",
+      "title": "87. 鸟儿没有乐园（4）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533814.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533814.html",
+      "title": "88. 鸟儿没有乐园（5）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533815.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533815.html",
+      "title": "89. 鸟儿没有乐园（6）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533818.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533818.html",
+      "title": "90. 高贵的血统（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533819.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533819.html",
+      "title": "91. 高贵的血统（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533821.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533821.html",
+      "title": "92. 高贵的血统（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533956.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533956.html",
+      "title": "93. 战士绝不退缩（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/533971.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/533971.html",
+      "title": "94. 战士绝不退缩（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/534001.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/534001.html",
+      "title": "95. 战士绝不退缩（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/534006.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/534006.html",
+      "title": "96. 比起亡国的皇族（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/534007.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/534007.html",
+      "title": "97. 比起亡国的皇族（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/534008.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/534008.html",
+      "title": "98. 比起亡国的皇族（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/534010.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/534010.html",
+      "title": "99. 比起亡国的皇族（4）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/537208.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/537208.html",
+      "title": "100. 空袭警报（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/544877.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/544877.html",
+      "title": "101. 空袭警报（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/549919.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/549919.html",
+      "title": "102. 让我进去（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/550457.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/550457.html",
+      "title": "103. 让我进去（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/551052.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/551052.html",
+      "title": "104. 让我进去（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/553672.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/553672.html",
+      "title": "105. 让我进去（4）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/553674.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/553674.html",
+      "title": "106. 让我进去（5）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/554131.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/554131.html",
+      "title": "107. 白天的仗由鸟来打，晚上的仗……（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/555396.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/555396.html",
+      "title": "108. 白天的仗由鸟来打，晚上的仗……（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/555735.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/555735.html",
+      "title": "109. 白天的仗由鸟来打，晚上的仗……（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/556566.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/556566.html",
+      "title": "110. 白天的仗由鸟来打，晚上的仗……（4）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/557002.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/557002.html",
+      "title": "111. 反帝国同盟（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/557484.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/557484.html",
+      "title": "112. 反帝国同盟（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/557967.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/557967.html",
+      "title": "113. 反帝国同盟（3）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/558337.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/558337.html",
+      "title": "114. 反帝国同盟（4）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/558341.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/558341.html",
+      "title": "115. 比谁都更像个人（1）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    },
+    "https://www.esjzone.one/forum/1781534524/558343.html": {
+      "url": "https://www.esjzone.one/forum/1781534524/558343.html",
+      "title": "116. 比谁都更像个人（2）",
+      "status": "completed",
+      "retries": 0,
+      "error": ""
+    }
+  }
+}

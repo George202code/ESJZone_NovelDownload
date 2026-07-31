@@ -1,0 +1,19 @@
+{
+    "cookie": "",
+    "output_dir": "./novels",
+    "max_concurrent": 5,
+    "max_retries": 5,
+    "timeout": 45000,
+    "headless": false,
+    "slow_mo": 100,
+    "max_overall_retries": 2,
+    "retry_base_delay": 2.0,
+    "retry_max_delay": 30.0,
+    "failure_ratio_threshold": 0.3,
+    "cache_ttl_hours": 168,
+    "cache_max_mb": 50,
+    "save_batch_size": 10,
+    "page_pool_max": 8,
+    "image_proxy": "http://127.0.0.1:7890",
+    "browser_bypass_proxy": true
+}

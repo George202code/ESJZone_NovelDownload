@@ -1,0 +1,6 @@
+playwright>=1.40.0
+httpx>=0.25.0
+ebooklib>=0.18
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+PyQt6>=6.6.0
