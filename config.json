@@ -14,6 +14,7 @@
     "cache_max_mb": 50,
     "save_batch_size": 10,
     "page_pool_max": 8,
+    "system_proxy": true,
     "image_proxy": "http://127.0.0.1:7890",
-    "browser_bypass_proxy": true
+    "browser_proxy": null
 }

@@ -105,6 +105,7 @@ async def _download_images_batch(
     max_concurrent: int = 5,
     proxy: str | None = None,
     logger: Optional[logging.Logger] = None,
+    progress_callback=None,
 ) -> Dict[str, Optional[bytes]]:
     """并发下载一批图片，返回 {src: data_or_None}。
 
@@ -130,6 +131,8 @@ async def _download_images_batch(
             if logger and done >= next_report:
                 pct = done * 100 // total
                 logger.info("🖼 图片下载进度 %d/%d (%d%%)", done, total, pct)
+                if progress_callback:
+                    progress_callback(done, total, f"图片下载 {done}/{total} ({pct}%)")
                 # 每隔约 10% 或至少 20 张打印一次
                 step = max(20, total // 10)
                 next_report = min(done + step, total)
@@ -140,9 +143,14 @@ async def _download_images_batch(
 class Downloader:
     """ESJZone 小说下载器 —— 编排浏览器、抓取、缓存、EPUB 全流程"""
 
-    def __init__(self, config: dict, log: logging.Logger | None = None):
+    def __init__(self, config: dict, log: logging.Logger | None = None,
+                 progress_callback=None, image_progress_callback=None):
         self.config = config
         self.log = log or logger
+
+        # 进度回调：GUI 用，签名 (completed: int, total: int, message: str)
+        self.progress_callback = progress_callback          # 章节下载进度
+        self.image_progress_callback = image_progress_callback  # 图片下载进度
 
         # 核心组件
         self.state_mgr = StateManager()
@@ -213,11 +221,17 @@ class Downloader:
         self.log.info("启动浏览器...")
         self._playwright = await async_playwright().start()
 
-        # 浏览器启动参数
+        # 浏览器代理：与图片代理彻底分离
+        # browser_proxy 为 null → 直连（依赖 VPN 规则将 esjzone 排除隧道）
+        # browser_proxy 有值 → 走指定代理
         launch_args: list = []
-        if self.config.get('browser_bypass_proxy', True):
+        browser_proxy = self.config.get('browser_proxy')
+        if browser_proxy:
+            launch_args.append(f'--proxy-server={browser_proxy}')
+            self.log.info("🔗 浏览器代理: %s", browser_proxy)
+        else:
             launch_args.append('--no-proxy-server')
-            self.log.debug("🔌 浏览器已绕过系统代理（直连论坛）")
+            self.log.info("🔌 浏览器直连（图片走 image_proxy）")
 
         self._browser = await self._playwright.chromium.launch(
             headless=self.config.get('headless', False),
@@ -233,33 +247,37 @@ class Downloader:
             self.log.info("首次运行，已打开浏览器，请在浏览器中登录 ESJZone...")
             temp_context = await self._browser.new_context()
             page = await temp_context.new_page()
-            await page.goto("https://www.esjzone.one/my/profile?uid=306674")
-            # 自动检测登录：只有页面同时满足以下条件时才认为已登录：
-            # 1. URL 仍在 profile 页面（未重定向到登录页）
-            # 2. 页面上有"登出"链接（仅已登录用户可见）
+            await page.goto("https://www.esjzone.one/")
+            self.log.info("⚡ 登录检测中（请在浏览器窗口中完成登录）")
+            # 自动检测登录：使用 JS 在页面内评估登录状态，比 DOM 选择器更可靠
+            # 因为 ESJZone 的"登出"按钮隐藏在用户下拉菜单中，is_visible() 始终为 False
             for attempt in range(100):
                 await asyncio.sleep(3)
-                current_url = page.url
-                # 必须还在 profile 页面，不能是 login 页
-                if 'login' in current_url.lower():
-                    continue
                 try:
-                    logout_btn = page.locator('text=登出').first
-                    if await logout_btn.count() > 0 and await logout_btn.is_visible():
+                    logged_in = await page.evaluate("""() => {
+                        // 检测 1：页面是否有登出链接（包括隐藏的）
+                        const logoutEls = document.querySelectorAll('a');
+                        for (const a of logoutEls) {
+                            if (a.textContent.includes('登出') || a.href.includes('logout'))
+                                return true;
+                        }
+                        // 检测 2：是否有通知图标（仅登录用户可见）
+                        if (document.querySelector('.fa-bell, [href*="notice"], .notification-badge'))
+                            return true;
+                        // 检测 3：导航栏是否显示用户名（登录后才会出现）
+                        const navUser = document.querySelector('.navbar .dropdown-toggle');
+                        if (navUser && navUser.textContent.trim().length > 0)
+                            return true;
+                        // 检测 4：Cookie 中是否有登录标识
+                        if (document.cookie.includes('remember') || document.cookie.includes('esjzone_token'))
+                            return true;
+                        return false;
+                    }""")
+                    if logged_in:
                         self.log.info("✅ 检测到登录成功！")
                         break
-                except Exception:
-                    pass
-                # 备选：检查用户名链接（更宽泛匹配）
-                try:
-                    user_link = page.locator('a[href*="/my/profile"]').first
-                    if await user_link.count() > 0:
-                        text = await user_link.inner_text()
-                        if text.strip() and text.strip() not in ('', '个人资料', '個人資料', 'Profile'):
-                            self.log.info("✅ 检测到登录成功！（用户名: %s）", text.strip()[:20])
-                            break
-                except Exception:
-                    pass
+                except Exception as ex:
+                    self.log.debug("   检测尝试 %d 失败: %s", attempt + 1, str(ex)[:60])
             else:
                 self.log.warning("⏰ 登录等待超时（5 分钟），将尝试继续...")
             await page.wait_for_load_state('networkidle')
@@ -399,6 +417,75 @@ class Downloader:
         # -- 最终保存 --
         self.state_mgr.save(state)
         self.error_reporter.report()
+
+        return epub_path
+
+    async def retry_chapters(self, novel_id: str, chapter_urls: List[str]) -> Optional[str]:
+        """重新下载指定章节并重建 EPUB（用于下载后补救失败项）
+
+        参数：
+            novel_id:   小说 ID（与下载时一致）
+            chapter_urls: 需要重试的失败章节 URL 列表
+
+        返回：
+            新的 EPUB 文件路径，失败返回 None
+        """
+        if not chapter_urls:
+            self.log.warning("没有指定需要重试的章节")
+            return None
+
+        state = self.state_mgr.load(novel_id)
+        if state is None:
+            self.log.error("未找到小说 %s 的下载记录", novel_id)
+            return None
+
+        # 只重置状态为 failed 的章节为 pending
+        reset_count = 0
+        for url in chapter_urls:
+            ch = state.chapters.get(url)
+            if ch and ch.status == 'failed':
+                ch.status = 'pending'
+                ch.retries = 0
+                ch.error = ''
+                reset_count += 1
+
+        if reset_count == 0:
+            self.log.warning("选中的章节中没有可重试的失败项")
+            return None
+
+        self.log.info("🔄 准备重试 %d 个失败章节（共选中 %d 个）", reset_count, len(chapter_urls))
+
+        # 确保浏览器启动
+        await self._ensure_browser()
+
+        # 第一轮：下载刚重置为 pending 的章节
+        await self._download_all(state)
+
+        # 整体重试：失败的继续重试
+        for round_num in range(1, self.max_overall_retries + 1):
+            retryable = state.retryable_chapters(self.max_retries)
+            if not retryable:
+                break
+            self.log.info("🔄 整体重试第 %d/%d 次，剩余 %d 个失败章节",
+                           round_num, self.max_overall_retries, len(retryable))
+            await self._download_all(state)
+            await asyncio.sleep(1)
+
+        # —— 重建 EPUB（将重新下载成功的章节插入）——
+        epub_path = await self._prepare_and_generate_epub(state)
+
+        # —— 保存状态 ——
+        self.state_mgr.save(state)
+        self.error_reporter.report()
+
+        # —— 汇总 ——
+        still_failed = [ch for ch in state.chapters.values() if ch.status == 'failed']
+        if still_failed:
+            self.log.warning("仍有 %d 个章节下载失败", len(still_failed))
+            for ch in still_failed:
+                self.log.warning("   - %s (%s)", ch.title, ch.error)
+        else:
+            self.log.info("✅ 所选失败章节已全部重试成功！")
 
         return epub_path
 
@@ -548,6 +635,11 @@ class Downloader:
 
         self.log.info("   [%s] %d/%d (%.1f%%)%s", bar, current, state.total, pct, eta_str)
 
+        # GUI 进度回调
+        if self.progress_callback:
+            self.progress_callback(current, state.total,
+                                   f"下载章节 {current}/{state.total} ({pct:.1f}%){eta_str}")
+
     async def _download_chapter(self, state: NovelState, url: str, ch_state: ChapterState) -> None:
         """下载单个章节（含缓存检查、指数退避重试）"""
         # 获取信号量
@@ -672,6 +764,7 @@ class Downloader:
             img_data_map = await _download_images_batch(
                 unique_urls, self._image_context, self.timeout, self.image_max_concurrent,
                 proxy=self.image_proxy, logger=self.log,
+                progress_callback=self.image_progress_callback,
             )
         else:
             img_data_map = {}

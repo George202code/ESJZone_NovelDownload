@@ -1,5 +1,63 @@
 # 更新日志
 
+## v2.9 (2026-08-01) —— GUI 体验增强：失败重试 + 进度分离 + 代理重设计
+
+### 1. 失败章节重试系统（`core/downloader.py` + `gui/main_window.py`）
+
+**问题**：下载完成后部分章节因超时/认证过期失败，用户无法在 GUI 中选择性重试失败项，只能整本重下。
+
+**方案**：
+```
+下载完成 → 发送 summary 信号（失败章节详情）
+    → GUI 显示失败汇总 + [选择并重试失败章节]
+    → 多选对话框（全选/全不选）
+    → RetryWorker → Downloader.retry_chapters()
+    → 重置失败章节 → 仅重下选中项 → 重建 EPUB
+```
+
+**新增**：
+- `Downloader.retry_chapters(novel_id, chapter_urls)` — 重置失败章节为 pending，调用 `_download_all` + `_prepare_and_generate_epub` 重建 EPUB
+- `RetryWorker(QThread)` — 专用重试线程，独立于 `DownloadWorker`，参数明确
+- `DownloadWorker.summary` 信号 — 下载完成后发送 `{novel_id, failed, failed_details: [{title, url, error}]}`
+- `DownloadTab` 新增 `retry_frame` — 失败总结标签 + 章节多选对话框 + 重试进度
+
+### 2. 进度条分离：章节 + 图片独立显示（`gui/main_window.py`）
+
+**问题**：章节下载和图片下载共用单个进度条，进度混杂不清晰。
+
+**修复**：
+- `DownloadWorker` 新增 `image_progress` 信号，与 `progress`（章节）解耦
+- `Downloader.__init__` 新增 `image_progress_callback` 参数，图片回调用它而非章节回调
+- `DownloadTab` 拆分为 `chapter_progress` + `image_progress` 两个 `QProgressBar`，各带独立标签
+
+### 3. 代理设置重新设计（`gui/main_window.py`）
+
+**问题**：原「使用系统代理」复选框名不副实——它只控制图片是否走 7890 代理，对浏览器无任何影响，用户容易误解。
+
+**修复**：
+- 替换为「图片代理」复选框 + 地址输入框 + 灰色提示文字「仅加速插图下载，不影响浏览器访问小说页」
+- 新增 `browser_proxy` 配置项（`config.json`）：`null`=浏览器直连，有值=走指定代理，与 `image_proxy` 彻底分离
+- 取消勾选时地址框自动灰掉，功能一目了然
+
+### 4. 登录检测重写（`core/downloader.py`）
+
+**问题**：`_login_or_load_auth()` 用 DOM 可见性检测登录——ESJZone 的「登出」藏在用户下拉菜单中，`is_visible()` 始终返回 `False`。
+
+**修复**：改用 `page.evaluate()` 执行 JS 在页面内检测：遍历 `<a>` 标签匹配登出/注销链接、检查通知图标、检查导航栏用户名 dropdown、检查 Cookie。四种策略加权，不受 DOM 可见性限制。
+
+### 5. GUI 小改进
+- **「重置登录」按钮**：一键删除 `storage_state.json`，登录状态标签实时显示「● 已登录 / ○ 未登录」
+- **无头模式默认关闭**：`chk_headless.setChecked(True)` → `False`，避免浏览器静默启动导致登录页不可见
+
+### 修改文件汇总
+
+| 文件 | 改动 |
+|------|------|
+| `core/downloader.py` | + `retry_chapters()`；+ `image_progress_callback`；登录检测 JS 重写 |
+| `gui/main_window.py` | + `RetryWorker`；+ `summary`/`image_progress` 信号；进度条拆分；代理重设计；失败重试 UI；重置登录按钮 |
+
+---
+
 ## v2.8 (2026-08-01) —— GUI 工具箱（PyQt6）
 
 **目标**：将 CLI 工具封装为可视化多模块工具箱，降低使用门槛，支持拖放批量操作。
